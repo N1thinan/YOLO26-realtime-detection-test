@@ -5,6 +5,7 @@ What I learn:
 - Working with pre-trained deep learning models (YOLO26)
 - Video stream processing with OpenCV
 
+<img src="Screenshot.png" width="50%"/>
 ![test_screenshot](Screenshot.png)
 
 How to use: 
