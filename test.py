@@ -7,9 +7,11 @@ import cv2
 import time
 from ultralytics import YOLO
 
-# 1. Initialize YOLO26l model
-# The 'l' variant provides higher accuracy at the cost of speed.
-model = YOLO("yolo26l.pt")
+device = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
+
+# 1. Initialize YOLO26s model
+# The 's' variant is the smallest and fastest.
+model = YOLO("yolo26s.pt").to(device)
 
 # 2. Setup Webcam (0 is usually the default camera)
 cap = cv2.VideoCapture(0)
@@ -54,4 +56,5 @@ while cap.isOpened():
 
 # Cleanup
 cap.release()
+
 cv2.destroyAllWindows()
