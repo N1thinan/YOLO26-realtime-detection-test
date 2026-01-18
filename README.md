@@ -5,7 +5,7 @@ What I learn:
 - Working with pre-trained deep learning models (YOLO26)
 - Video stream processing with OpenCV
 
-<img src="Screenshot.png" width="30%"/>
+<img src="Screenshot.png" width="40%"/>
 
 How to use: 
 1. download the pretrain model e.g. yolo26s.pt, yolov8n.pt
